@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List App | ugcant</title>
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/styles/app.css" />
+    <!-- Custom JS -->
+    <script src="./assets/scripts/app.js" defer></script>
+    <!-- SweetAlert Js -->
+    <script src="/assets/scripts/sweetAlert.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        ToDoList<span><a href="mailto:utrkkan@pm.me">ugcant</a></span>
+      </h1>
+
+      <div class="user-sidebar">
+      <p><span id="welcome-user">Misafir</span><i class="fa-regular fa-user"></i></p> 
+      <div class="user-menu">
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i><a href="mailto:utrkkan@pm.me">Destek</a> 
+          </li>
+          <li>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> <p id="logout">Çıkış</p> 
+          </li>
+      </ul>
+      </div>
+    </header>
+    <main>
+      <h2>Yapılacaklar Listesi</h2>
+      <form class="todo-form" method="">
+        <input
+          type="text"
+          name="todo-input"
+          id="todo-input"
+          placeholder="Yapılacak görev"
+          minlength="1"
+        />
+        <input type="button" id="add-btn" value="+" />
+      </form>
+      <section class="status-todo">
+        <h3 id="todo-all">Tümü</h3>
+        <h3 id="todo-queue">Bekleyenler</h3>
+        <h3 id="todo-completed">Tamamladıkların</h3>
+        <button id="clear-btn">Temizle<i class="fa-solid fa-trash"></i></button>
+      </section>
+      <section class="list-container">
+        <div class="empty-el">
+          <p id="empty-list" class="empty-list">
+            Yapılacaklar listende hiçbir görev yok.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>made by <a href="mailto:utrkkan@pm.me">ugcant</a></footer>
+  </body>
+</html>
